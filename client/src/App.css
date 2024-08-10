@@ -1,0 +1,244 @@
+
+.heroContainer {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+  max-height: 90vh;
+  height: 80vh;
+  background-image: url("./components/chess.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heroContainer > div {
+  color: white;
+}
+
+.heroText {
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+.descriptiveContainer {
+  text-align: center;
+  height: 15vh;
+}
+
+.listItem {
+  border: 3px solid black;
+  margin-bottom: 1em;
+  opacity: 0.5;
+  transform: translateX(-90%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.pullIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.descripDiv {
+  border-left: 2px solid slategray;
+}
+.addItem {
+  list-style-type: none;
+}
+
+.addItemButton {
+  color: #f5f5f5;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.25rem;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.addSubItem {
+  list-style-type: none;
+}
+
+.addSubItemButton {
+  color: #f5f5f5;
+  background-color: #333;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.checkBox {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: black;
+}
+
+.checkList {
+  padding: 1rem 1rem 1rem 2rem;
+  margin-top: 0.5rem;
+}
+
+/* .checkList-body {
+border-top: 1rem double black;
+} */
+
+.checkListDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 3rem;
+  margin-left: 1rem white;
+  margin-right: 1rem white;
+  background-color: gray;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.checkLogo {
+  /*   position: absolute; */
+  width: 3rem;
+  height: auto;
+  /*   top: -3.25rem; */
+  /*   left: 0; */
+}
+
+.deleteButton {
+  color: #f5f5f5;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.firstItem {
+  border-top: 0.25rem solid #d2b48c;
+}
+
+.leftLiContent,
+.rightLiContent {
+display: inline-block;
+vertical-align: middle;
+}
+
+.leftLiContent {
+  width: calc(100% - 5rem);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.leftLiContent > * {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.listTypeButton {
+  color: #f5f5f5;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.25rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logoDiv {
+  width: 14rem;
+  height: 4.5rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 0.1rem solid black;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  /*   overflow: hidden; */
+  /*   padding: 0; */
+  /*   position: relative; */
+}
+
+.mainListItem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* .mainListItem::before {
+  content: counter(listItemCounter);
+  counter-increment: listItemCounter;
+  margin-right: 1rem;
+  float: left;
+  position: absolute;
+  left: 1rem;
+} */
+
+.mainListItem:nth-child(odd) {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.mainListItem:nth-child(even) {
+  background-color: lightgray;
+  color: black;
+}
+
+.nav-item {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  width: 14rem;
+  height: 4.5rem;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.nav-item:nth-child(even) {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.nav-item:nth-child(odd) {
+  background-color: gray;
+  color: white;
+}
+
+.rightLiContent {
+text-align: right;
+width: 5rem;
+overflow: hidden;
+}
+
+.sidebar {
+  width: 15rem;
+  height: 100vh;
+  background-color: #d2b48c;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: left;
+  font-size: 0.75em;
+  color: slategray;
+}
